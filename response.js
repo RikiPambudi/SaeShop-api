@@ -1,24 +1,24 @@
 const user = {
   id: 1,
-  name: 'Leanne Graham',
-  username: 'Bret',
-  email: 'Sincere@april.biz',
+  name: 'Riki Setiyo Pambdudi',
+  username: 'rikisetiyo22',
+  email: 'Rikisetiyopambudi@gmail.com',
   address: {
-    street: 'Kulas Light',
-    suite: 'Apt. 556',
-    city: 'Gwenborough',
-    zipcode: '92998-3874',
+    street: 'Perumahan Cahaya Darussalam 3',
+    suite: 'B5 No. 3',
+    city: 'Bekasi Timur',
+    zipcode: '92998',
     geo: {
       lat: '-37.3159',
       lng: '81.1496',
     },
   },
-  phone: '1-770-736-8031 x56442',
-  website: 'hildegard.org',
+  phone: '081554579425',
+  website: 'https://id.linkedin.com/in/riki-setiyo-pambudi',
   company: {
-    name: 'Romaguera-Crona',
-    catchPhrase: 'Multi-layered client-server neural-net',
-    bs: 'harness real-time e-markets',
+    name: '-',
+    catchPhrase: '-',
+    bs: '-',
   },
 }
 
