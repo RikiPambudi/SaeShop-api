@@ -1,8 +1,21 @@
 const express = require('express')
+const bodyParser = require('body-parser')
 const response = require('./response')
 
 const app = express()
+app.use(bodyParser.json())
 const PORT = 8000
+
+const users = [
+  {
+    username: 'rikisetiyopambudi@gmail.com',
+    password: 'R1k1s3t1Y0'
+  },
+  {
+    username: 'rikisetiyopambudi',
+    password: 'R1k1s3t1Y0'
+  }
+]
 
 app.get('/users/riki', (req, res) => {
   res.send(response.user)
@@ -13,7 +26,10 @@ app.get('/product', (req, res) => {
 })
 
 app.post('/signin/validate', (req, res) => {
-  if (req.body.username === 'rikisetiyo' && req.body.password === 'rikisetiyo') {
+  const { username, password } = req.body
+  const user = users.find(u => u.username === username && u.password === password)
+  
+  if (user) {
     res.send(response.loginSuccess)
   } else {
     res.send(response.loginFailed)
