@@ -25,6 +25,10 @@ app.get('/product', (req, res) => {
   res.send(response.product)
 })
 
+app.get('/product/list', (req, res) => {
+  res.send(response.productList)
+})
+
 app.post('/signin/validate', (req, res) => {
   const { username, password } = req.body
   const user = users.find(u => u.username === username && u.password === password)
